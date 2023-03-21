@@ -11,18 +11,20 @@ $user_data = check_login($con);
 
 
 <!DOCTYPE html>
+
 <html>
     <head>
-        <title>
-            Login Project
-        </title>
+        <title>Login Project</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
     </head>
     <body>
-        <a href=".\logout.php"> Logout</a>
-        <h1> index </h1>
+        <div class="container">
+            <h4> Hello, <?= $user_data['user_name']?></h4>
 
-        <br>
+            <p> New project coming soon...</p>
 
-        Hello, <?= $user_data['user_name']?>
+            <a href=".\logout.php"> Log out</a>
+        </div>
     </body>
 </html>
