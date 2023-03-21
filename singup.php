@@ -32,17 +32,20 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 <html>
     <head>
-        <title>Singup</title>
+        <title>Sign up</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
     </head>
     <body>
-        <div id="box">
-            <form action="" method="POST">
-                <div>Singup</div>
-                <input type="text" name="user_name"><br><br>
-                <input type="password" name="password"><br><br>
-                <input type="submit" value="singup"><br><br>
-                <a href="login.php">Click to Login</a><br><br>
+        <div class="container">
+            <h4>Sing up!</h4>
+            <form action="" method="POST" class="box">
+                <input type="text" name="user_name" placeholder="User Name">
+                <input type="password" name="password" placeholder="Password">
+                <input class = "btn"type="submit" value="signup">
             </form>
+            <a href="login.php" class="signup">If you already have an account, click to Log in</a>
+
         </div>
     </body>
 </html>
