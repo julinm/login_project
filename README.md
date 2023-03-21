@@ -1,3 +1,5 @@
 # login_project
-Login project in process 
+
+Very simple login project
+
 PHP - HTML - CSS - MySQL
