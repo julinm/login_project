@@ -49,16 +49,19 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 <html>
     <head>
         <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
     </head>
-    <body>
-        <div id="box">
-            <form action="" method="POST">
-                <div>Login</div>
-                <input type="text" name="user_name"><br><br>
-                <input type="password" name="password"><br><br>
-                <input type="submit" value="Login"><br><br>
-                <a href="singup.php">Click to Singup</a><br><br>
+        <div class="container">
+            <h4>Log in into your account</h4>
+            <form action="" method="POST" class="box">
+                <input type="text" name="user_name" placeholder="User Name">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Log in"  class="btn"><br><br>
             </form>
+            <a href="signup.php" class="signup">If you don't have an account yet, click to Sign up!</a>
+
         </div>
-    </body>
 </html>
+
+
